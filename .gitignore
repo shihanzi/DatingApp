@@ -59,6 +59,9 @@ dlldata.c
 BenchmarkDotNet.Artifacts/
 
 # .NET Core
+launchSettings.json
+appsettings.json
+appsettings.Development.json
 project.lock.json
 project.fragment.lock.json
 artifacts/
@@ -239,6 +242,7 @@ ClientBin/
 *.pfx
 *.publishsettings
 orleans.codegen.cs
+WeatherForecast.cs
 
 # Including strong name files can present a security risk
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
