@@ -3,6 +3,7 @@ using DatingApp.DataContext;
 using DatingApp.DTOs;
 using DatingApp.Interfaces;
 using DatingApp.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
@@ -21,6 +22,7 @@ namespace DatingApp.Controllers
             _tokenService = tokenService;
         }
 
+        [Authorize]
         [HttpPost("register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
